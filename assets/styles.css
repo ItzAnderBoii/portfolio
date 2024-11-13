@@ -1,4 +1,4 @@
-body {
+vbody {
    background: rgb(10,10,10,1);
 }    
 
@@ -63,15 +63,16 @@ body {
 }
 
 .card .user span {
-    -webkit-text-stroke: 1px white;
-    color: black;
+    color: transparent;
+    background: linear-gradient(to right, green, blue);
+    background-clip: text;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .card .user a {
     color: white;
     padding: 10px 10px 10px 10px;
-    background: rgb(10,10,10,1);
+    background: black;
     border: 2px solid white;
     text-decoration: none;
     font-family: sans-serif;
@@ -102,7 +103,6 @@ body {
 .second-section p:hover {
     transform: rotate(0.89deg);
     box-shadow: 0 0 15px 0 #fff;
-    border-bottom: 2px solid white;
 }
 
 .box .second-section p {
@@ -115,4 +115,31 @@ body {
     font-size: 1.2em;
     max-width: 100%;
     padding: 25px 25px 25px 25px;
+}
+
+.box .third-section {
+    margin: 60px auto;
+}
+
+
+.box .third-section .images img:hover {
+    box-shadow: 0 0 5px 0 #fff;
+    padding: 5px 5px 5px 5px;
+    border-radius: 7px;
+    opacity: 1;
+}
+.box .third-section .images img {
+    margin: -10px 0 0;
+    height: 50px;
+    opacity: .7;
+    width: auto;
+    transition: .3s ease-in-out;
+}
+.box .third-section .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
